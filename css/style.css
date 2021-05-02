@@ -23,6 +23,10 @@ a {
   padding: 20px;
 }
 
+.menu a:hover {
+  color: #d8d8d8;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -31,6 +35,7 @@ a {
   font-family: "Roboto";
   font-size: 1.2em;
   color: #fefefe;
+  letter-spacing: 1.5px;
 }
 
 .menu-home {
@@ -64,6 +69,7 @@ a {
   font-size: 5em;
   color: white;
   text-transform: uppercase;
+  letter-spacing: 1.3px;
 }
 
 .intro-block {
@@ -74,6 +80,8 @@ a {
   font-size: 1.2em;
   color: white;
   width: 550px;
+  letter-spacing: 1.2px;
+  line-height: 26px;
 }
 
 .intro-block p {
