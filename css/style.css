@@ -86,7 +86,8 @@ a {
   letter-spacing: 1.3px;
 }
 
-.intro-block {
+.intro-block,
+.slide-text {
   border-radius: 5px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -113,4 +114,13 @@ a {
 
 .slide-text {
   grid-column: 3/4;
+  width: 700px;
+}
+
+.slide-text p {
+  display: none;
+}
+
+.slide-text p.ativo {
+  display: block;
 }

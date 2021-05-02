@@ -3,6 +3,7 @@ export class Slide {
     this.slide = document.querySelector(slide);
     this.wrapper = document.querySelector(wrapper);
     this.dist = { finalPosition: 0, startX: 0, movement: 0 };
+    this.infoText = document.querySelectorAll(".slide-text p");
     this.activeClass = "ativo";
   }
 
@@ -100,6 +101,7 @@ export class Slide {
       item.element.classList.remove(this.activeClass),
     );
     this.slideArray[this.index.active].element.classList.add(this.activeClass);
+    this.switchText();
   }
 
   activePrevSlide() {
@@ -119,6 +121,11 @@ export class Slide {
 
   addResizeEvent() {
     window.addEventListener("resize", this.onResize);
+  }
+
+  switchText() {
+    this.infoText.forEach((text) => text.classList.remove(this.activeClass));
+    this.infoText[this.index.active].classList.add(this.activeClass);
   }
 
   bindEvent() {
@@ -141,7 +148,7 @@ export class Slide {
   }
 }
 
-export class SlideNav extends Slide {
+export default class SlideNav extends Slide {
   addArrow(prev, next) {
     this.prevElement = document.querySelector(prev);
     this.nextElement = document.querySelector(next);
