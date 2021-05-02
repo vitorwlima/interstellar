@@ -22,6 +22,7 @@ a {
   color: inherit;
   padding: 20px;
   position: relative;
+  transition: 0.3s;
 }
 
 .link-ativo::after {
@@ -37,6 +38,7 @@ a {
 
 .menu a:hover {
   color: #d8d8d8;
+  transition: 0.3s;
 }
 
 .menu {
@@ -98,4 +100,17 @@ a {
 
 .intro-block p {
   color: #d8d8d8;
+}
+
+.cast-section {
+  display: grid;
+  grid-template-columns: 230px minmax(300px, 700px) 1fr 230px;
+}
+
+.slide-wrapper {
+  grid-column: 2/3;
+}
+
+.slide-text {
+  grid-column: 3/4;
 }
