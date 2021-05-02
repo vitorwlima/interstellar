@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 140px;
+  margin-top: 50px;
+  font-family: "Roboto";
+  font-size: 1.2em;
+  color: #fefefe;
+}
+
+.menu-home {
+  margin-left: 230px;
+}
+
+.menu-extra {
+  margin-right: 230px;
+}
+
+.menu-extra ul {
+  display: flex;
+}
+
+.menu-extra li {
+  margin-right: 20px;
+}
+
+.menu-extra li:last-child {
+  margin-right: 0;
+}
+
+.intro-section {
+  margin-left: 230px;
+}
+
+.title {
+  margin-bottom: 50px;
+  font-family: "Nunito";
+  font-size: 5em;
+  color: white;
+  text-transform: uppercase;
+}
+
+.intro-block {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Roboto";
+  font-size: 1.2em;
+  color: white;
+  width: 550px;
+}
+
+.intro-block p {
+  color: #d8d8d8;
+}
