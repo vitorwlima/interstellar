@@ -163,3 +163,22 @@ a {
 .gargantua-textblock {
   grid-column: 2/4;
 }
+
+.anima-menu {
+  animation: slide-down 2s forwards;
+}
+
+.anima-content {
+  animation: slide-down 4s forwards;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
