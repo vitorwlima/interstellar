@@ -88,7 +88,8 @@ a {
 
 .intro-block,
 .slide-text,
-.easteregg-section p {
+.easteregg-section p,
+.gargantua-textblock {
   border-radius: 5px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -105,7 +106,8 @@ a {
 }
 
 .cast-section,
-.eastereggs-block {
+.eastereggs-block,
+.gargantua-block {
   display: grid;
   grid-template-columns: 230px minmax(300px, 700px) 1fr 230px;
 }
@@ -151,5 +153,13 @@ a {
 }
 
 .easteregg-section {
+  grid-column: 2/4;
+}
+
+.gargantua-block h1 {
+  grid-column: 2/4;
+}
+
+.gargantua-textblock {
   grid-column: 2/4;
 }
