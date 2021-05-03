@@ -87,7 +87,8 @@ a {
 }
 
 .intro-block,
-.slide-text {
+.slide-text,
+.easteregg-section p {
   border-radius: 5px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -103,7 +104,8 @@ a {
   color: #d8d8d8;
 }
 
-.cast-section {
+.cast-section,
+.eastereggs-block {
   display: grid;
   grid-template-columns: 230px minmax(300px, 700px) 1fr 230px;
 }
@@ -123,4 +125,31 @@ a {
 
 .slide-text p.ativo {
   display: block;
+}
+
+.subtitle,
+.subtitle-1 {
+  margin-bottom: 10px;
+  font-family: "Nunito";
+  font-size: 2.2em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  margin-top: 200px;
+}
+
+.subtitle-1 {
+  margin-top: 100px;
+}
+
+.easteregg-section div:last-child {
+  margin-bottom: 200px;
+}
+
+.eastereggs-block .title {
+  grid-column: 2/3;
+}
+
+.easteregg-section {
+  grid-column: 2/4;
 }
